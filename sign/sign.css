@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BagelFatOne-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #eafbe6;
+  margin: 0;
+  padding: 0;
+  font-family: 'SUIT-Regular', 'Pretendard', 'Noto Sans';
+}
+
+.container {
+  width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-family: 'SUIT-Regular', 'Pretendard', 'Noto Sans';
+}
+
+/* 로그인 메인 */
+.sign-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-box {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+  width: 480px;
+  padding: 56px 48px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-title {
+  color: #009900;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sign-sub {
+  color: #5E6D93;
+  font-size: 1.03rem;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.signup-link {
+  color: #009900;
+  font-weight: 600;
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 30px;
+  margin-bottom: 14px;
+  gap: 30px;
+}
+.input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: none;
+  background: #f8fcf5;
+  font-size: 1.07rem;
+  color: #222;
+  outline: none;
+  box-sizing: border-box;
+}
+.input:focus {
+  background: #fff !important;
+  border: 1.5px solid #B3E0B3 !important;
+  box-shadow: 0 0 32px 0 rgba(0,153,0,0.18);
+  backdrop-filter: blur(8px);
+  outline: none !important;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.sign-btn {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 12px;
+  background: #bfc5d1;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sign-btn:active {
+  background: #009900;
+}
+.sign-btn.enabled {
+  background: #009900; /* 활성(초록) */
+  cursor: pointer;
+}
+
+/* @media (max-width: 600px) {
+  .login-box {
+    width: 98vw;
+    padding: 32px 8vw;
+  }
+  .header-inner {
+    width: 98vw;
+    min-width: 0;
+  }
+} */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenLog - User</title>
+  <link rel="stylesheet" href="../header/header.css">
+  <link rel="stylesheet" href="user.css">
+</head>
+<body>
+  <div class="container">
+    <div data-include="../header/header.html"></div>
+    <div class="user-container">
+      <!-- 사이드바 -->
+      <aside class="sidebar">
+        <div class="sidebar-profile">
+          <img src="../img/sidebar-profile.png" alt="프로필" class="sidebar-profile-img">
+        </div>
+        <nav class="sidebar-menu">
+          <ul>
+            <li class="sidebar-menu-section">프로필 관리</li>
+            <li class="sidebar-menu-item active" data-content="profile">
+              <span class="sidebar-menu-icon">
+                <svg class="icon-edit" width="22" height="22" viewBox="0 0 24 24">
+                  <path d="M7.2915 7.29175H6.24984C5.6973 7.29175 5.1674 7.51124 4.7767 7.90194C4.386 8.29264 4.1665 8.82255 4.1665 9.37508V18.7501C4.1665 19.3026 4.386 19.8325 4.7767 20.2232C5.1674 20.6139 5.6973 20.8334 6.24984 20.8334H15.6248C16.1774 20.8334 16.7073 20.6139 17.098 20.2232C17.4887 19.8325 17.7082 19.3026 17.7082 18.7501V17.7084" fill="none" stroke="currentColor" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.6664 5.20832L19.7914 8.33332M21.2341 6.85936C21.6444 6.44911 21.8749 5.89268 21.8749 5.31249C21.8749 4.7323 21.6444 4.17587 21.2341 3.76561C20.8239 3.35536 20.2674 3.12488 19.6873 3.12488C19.1071 3.12488 18.5506 3.35536 18.1404 3.76561L9.37476 12.5V15.625H12.4998L21.2341 6.85936Z" fill="none" stroke="currentColor" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>프로필 수정</span>
+            </li>
+            <li class="sidebar-menu-section">계정 설정</li>
+            <li class="sidebar-menu-item" data-content="password">
+              <span class="sidebar-menu-icon">
+                <svg class="icon-password" width="22" height="22" viewBox="1 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M8.33325 11.4583V7.29167C8.33325 6.1866 8.77224 5.12679 9.55364 4.34539C10.335 3.56399 11.3949 3.125 12.4999 3.125C13.605 3.125 14.6648 3.56399 15.4462 4.34539C16.2276 5.12679 16.6666 6.1866 16.6666 7.29167V11.4583M15.6249 16.6667H15.6353M12.5103 16.6667H12.5208M9.39575 16.6667H9.40617M5.20825 13.5417C5.20825 12.9891 5.42775 12.4592 5.81845 12.0685C6.20915 11.6778 6.73905 11.4583 7.29159 11.4583H17.7083C18.2608 11.4583 18.7907 11.6778 19.1814 12.0685C19.5721 12.4592 19.7916 12.9891 19.7916 13.5417V19.7917C19.7916 20.3442 19.5721 20.8741 19.1814 21.2648C18.7907 21.6555 18.2608 21.875 17.7083 21.875H7.29159C6.73905 21.875 6.20915 21.6555 5.81845 21.2648C5.42775 20.8741 5.20825 20.3442 5.20825 19.7917V13.5417Z" fill="none" stroke="currentColor" stroke-width="1.78571" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>비밀번호 변경</span>
+            </li>
+            <li class="sidebar-menu-item" data-content="logout">
+              <span class="sidebar-menu-icon">
+                <svg class="icon-logout" width="22" height="22" viewBox="-2 0 25 24">
+                  <path d="M14.5833 8.33342V6.25008C14.5833 5.69755 14.3638 5.16764 13.9731 4.77694C13.5824 4.38624 13.0525 4.16675 12.5 4.16675H5.20833C4.6558 4.16675 4.12589 4.38624 3.73519 4.77694C3.34449 5.16764 3.125 5.69755 3.125 6.25008V18.7501C3.125 19.3026 3.34449 19.8325 3.73519 20.2232C4.12589 20.6139 4.6558 20.8334 5.20833 20.8334H12.5C13.0525 20.8334 13.5824 20.6139 13.9731 20.2232C14.3638 19.8325 14.5833 19.3026 14.5833 18.7501V16.6667" fill="none" stroke="currentColor" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9.375 12.5001H21.875M21.875 12.5001L18.75 9.37512M21.875 12.5001L18.75 15.6251" fill="none" stroke="currentColor" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>로그아웃</span>
+            </li>
+            <li class="sidebar-menu-item" data-content="delete">
+              <span class="sidebar-menu-icon">
+                <svg class="icon-delete" width="22" height="22" viewBox="2 0 24 24">
+                  <path d="M6.25 21.875V19.7917C6.25 18.6866 6.68899 17.6268 7.47039 16.8454C8.25179 16.064 9.3116 15.625 10.4167 15.625H14.0625M22.9167 22.9167L17.7083 17.7083M17.7083 22.9167L22.9167 17.7083M8.33333 7.29167C8.33333 8.39674 8.77232 9.45654 9.55372 10.2379C10.3351 11.0193 11.3949 11.4583 12.5 11.4583C13.6051 11.4583 14.6649 11.0193 15.4463 10.2379C16.2277 9.45654 16.6667 8.39674 16.6667 7.29167C16.6667 6.1866 16.2277 5.12679 15.4463 4.34539C14.6649 3.56399 13.6051 3.125 12.5 3.125C11.3949 3.125 10.3351 3.56399 9.55372 4.34539C8.77232 5.12679 8.33333 6.1866 8.33333 7.29167Z" fill="none" stroke="currentColor" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>회원 탈퇴</span>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- 메인 컨텐츠 영역 -->
+      <main class="user-main">
+        <div id="user-content"></div>
+      </main>
+    </div>
+  </div>
+  <script src="../header/include.js"></script>
+  <script src="user.js"></script>
+  <script src="../public/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenLog 로그인</title>
+  <link rel="stylesheet" href="../header/header.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div data-include="../header/header.html"></div>
+    <main class="login-main">
+      <div class="login-box">
+        <h2 class="login-title">그린로그 로그인</h2>
+        <div class="login-sub">
+          아직 계정이 없으신가요?
+          <a href="../sign/sign.html" class="sign">회원가입하기</a>
+        </div>
+        <form>
+          <input type="email" class="input" id="email" placeholder="아이디 (이메일)" autocomplete="username" required>
+          <input type="password" class="input" id="password" placeholder="비밀번호 (영문 대/소문자, 숫자, 특수문자 포함)" autocomplete="current-password" required>
+          <p id="error-message" class="error"></p>
+          <button type="submit" class="login-btn" id="loginBtn" disabled>로그인</button>
+        </form>
+        <div class="forgot-row">
+          <a href="#" class="forgot-link">비밀번호를 잊으셨나요?</a>
+        </div>
+        <!-- <button class="kakao-btn">
+          <span class="kakao-icon">💬</span>
+          카카오 로그인
+        </button> -->
+      </div>
+    </main>
+  </div>
+  <script src="../header/include.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

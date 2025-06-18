@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenLog - Log</title>
+  <link rel="stylesheet" href="../header/header.css">
+  <link rel="stylesheet" href="mission.css">
+</head>
+<body>
+  <div class="container">
+    <div data-include="../header/header.html"></div>
+
+<!-- 식물 컬렉션 -->
+    <section class="plant-collection-section">
+      <div class="plant-collection-title">My Garden</div>
+      <div class="plant-collection-list">
+        <img src="../img/plant1.png" alt="plant1">
+        <img src="../img/plant2.png" alt="plant2">
+        <img src="../img/plant3.png" alt="plant3">
+        <img src="../img/plant4.png" alt="plant4">
+        <img src="../img/plant5.png" alt="plant5">
+      </div>
+    </section>
+
+    <!-- 미션 영역 -->
+    <section class="mission-section">
+      <!-- 이번주 미션 -->
+      <div class="mission-box">
+        <div class="mission-title">This Week's Mission</div>
+        <div class="mission-content-row">
+        <div class="mission-img-wrap">
+            <img src="../img/Rectangle.png" alt="식물상태" class="mission-img">
+        </div>
+        <ul class="mission-list" id="weekly-mission-list"></ul>
+        </div>
+      </div>
+      <!-- 미션 완료 -->
+      <div class="mission-completed-box">
+        <div class="mission-title">Mission Completed</div>
+        <ul class="mission-list completed" id="completed-mission-list"></ul>
+      </div>
+    </section>
+  </div>
+  <script src="../header/include.js"></script>
+  <script src="mission.js"></script>
+  <script src="../public/auth.js"></script>
+</body>
+</html>

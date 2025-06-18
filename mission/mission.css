@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BagelFatOne-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background: #eafbe6;
+  margin: 0;
+  padding: 0;
+  font-family: 'SUIT-Regular', 'Pretendard', 'Noto Sans';
+}
+
+.container {
+  width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: 'SUIT-Regular', 'Pretendard', 'Noto Sans';
+}
+
+/* 식물 컬렉션 */
+.plant-collection-section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+  padding: 32px 0 18px 0;
+  margin-bottom: 10px;
+}
+.plant-collection-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.plant-collection-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+}
+.plant-collection-list img {
+  height: 90px;
+  object-fit: contain;
+}
+
+/* 미션 영역 */
+.mission-section {
+  display: flex;
+  gap: 30px;
+}
+.mission-box {
+  width: 630px;
+  /* height: auto; */
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+  padding: 32px 28px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  /*box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;*/
+}
+.mission-completed-box {
+  width: 340px;
+  /* height: 370px; */
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+  padding: 32px 28px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  /*box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+  padding: 32px 28px;
+  width: 340px;
+  height: 370px;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;*/
+}
+.mission-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222;
+  text-align: center;
+}
+.mission-content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  padding-top: 4rem;
+}
+.mission-img-wrap {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.mission-img {
+  width: 10rem;
+  height: 10rem;
+  margin: 10px;
+}
+.mission-list {
+  width: auto; /* 필요시 조정 */
+  margin-left: 30px;
+}
+#weekly-mission-list {
+  padding-left: 0px;
+  margin-left: 30px;
+}
+.mission-list li {
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
+  font-size: 1.02rem;
+  color: #444;
+  margin-left: 10px;
+}
+.mission-list input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #009900;
+}
+.mission-list.completed li {
+  color: #222;
+}
+.mission-list.completed .checkmark {
+  color: #009900;
+  font-size: 1.3rem;
+}
+#completed-mission-list {
+  padding: 0px;
+}
+
+/* @media (max-width: 1000px) {
+  .container {
+    width: 98vw;
+    min-width: 320px;
+  }
+  .mission-section {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .mission-box {
+    width: 100%;
+    min-width: 0;
+  }
+} */

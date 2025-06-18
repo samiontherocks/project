@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenLog - Log</title>
+  <link rel="stylesheet" href="../header/header.css">
+  <link rel="stylesheet" href="log.css">
+</head>
+<body>
+  <div class="container">
+    <div data-include="../header/header.html"></div>
+
+    <!-- 검색바 -->
+    <div class="search-bar">
+      <span class="search-icon">
+        <img src="../img/search-icon.png" alt="검색" />
+      </span>
+      <input type="text" placeholder="키워드를 검색해서 일기를 찾을 수 있어요!">
+    </div>
+
+    <section class="log-main-section">
+      <!-- 왼쪽: 캘린더 & 식물상태 -->
+      <div class="log-left">
+        <div class="calendar-box">
+          <div class="calendar-header">
+            <button class="calendar-arrow1">
+              <img src="../img/month-before.png" alt="이전 달">
+            </button>
+            <span class="calendar-year-month">2024년 4월</span>
+            <button class="calendar-arrow2">
+              <img src="../img/month-after.png" alt="다음 달">
+            </button>
+          </div>
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-body">
+              <!-- JS로 생성 -->
+            </tbody>
+          </table>
+        </div>
+        <div class="plant-status-box">
+          <div class="plant-status-title">This Week's Plant Status</div>
+          <img src="../img/Rectangle2.png" alt="식물 상태" class="plant-status-img">
+        </div>
+      </div>
+      <!-- 오른쪽: 일기 리스트 -->
+      <div class="log-right">
+        <div id="log-list">
+          <!-- JS로 생성 -->
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="../header/include.js"></script>
+  <script src="log.js"></script>
+  <script src="../public/auth.js"></script>
+</body>
+</html>

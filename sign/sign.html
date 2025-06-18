@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenLog 로그인</title>
+  <link rel="stylesheet" href="../header/header.css">
+  <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+  <div class="container">
+    <div data-include="../header/header.html"></div>
+    <main class="sign-main">
+      <div class="sign-box">
+        <h2 class="sign-title">그린로그 회원가입</h2>
+        <form>
+          <input type="email" class="input" id="email" placeholder="아이디 (이메일)" autocomplete="username" required>
+          <input type="password" class="input" id="password" placeholder="비밀번호 (영문 대/소문자, 숫자, 특수문자 포함)" autocomplete="write-password" required>
+          <input type="password" class="input" id="passwordConfirm" placeholder="비밀번호 확인을 위해 다시 한 번 입력해주세요." autocomplete="rewrite-password" required>
+          <input type="text" class="input" id="nickname" placeholder="닉네임은 언제든지 변경할 수 있어요!" autocomplete="nickname" required>
+          <button type="submit" class="sign-btn" id="SignBtn" disabled>회원가입</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script src="../header/include.js"></script>
+  <script src="sign.js"></script>
+</body>
+</html>

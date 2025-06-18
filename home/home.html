@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../header/header.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="container">
+    <div data-include="../header/header.html"></div>
+
+    <!-- 그래프 영역 -->
+    <section class="graph-section">
+    <div id="graph"></div>
+    </section>
+    <!-- 하단 2칼럼 -->
+    <section class="bottom-section">
+    <!-- 왼쪽: 데일리 타임라인 -->
+    <div class="timeline-box">
+        <div id="timeline-date"></div>
+        <ul id="timeline-list" class="timeline-list"></ul>
+        <!-- <div id="timeline-modal" class="modal-overlay" style="display:none;">
+          <div class="modal-content">
+            <button class="modal-close">&times;</button> -->
+            <!-- 첨부파일 내용이 여기에 들어갑니다 -->
+            <!-- <div class="modal-inner" id="modal-inner"> -->
+              <!-- JS에서 내용 삽입 -->
+            <!-- </div>
+          </div>
+        </div> -->
+    </div>
+    <!-- 오른쪽: 식물 상태 & 주간 미션 -->
+    <div class="plant-mission-box">
+        <img src="../img/Rectangle.png" class="plant-img">
+        <div class="mission-title">Weekly Mission</div>
+        <ul class="mission-list" id="mission-list"></ul>
+    </div>
+    </section>
+
+  </div>
+  <script src="../header/include.js"></script>
+  <script src="home.js"></script>
+  <script src="../public/auth.js"></script>
+</body>
+</html>

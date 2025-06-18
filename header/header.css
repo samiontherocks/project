@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BagelFatOne-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 헤더 */
+.header {
+  margin-bottom: 18px;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  gap: 10px;
+}
+.logo-area img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.logo-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #009900;
+  letter-spacing: 1px;
+  font-family: 'BagelFatOne-Regular';
+}
+.gnb {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: 'SUIT-Regular', 'Pretendard', 'Noto Sans';
+}
+.gnb a {
+  text-decoration: none;
+  color: #5E6D93;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.gnb a.active,
+.gnb a:hover {
+  background: #eafbe6;
+  color: #009900;
+}
+.profile-icon img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  vertical-align: middle;
+}

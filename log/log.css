@@ -1,0 +1,353 @@
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'BagelFatOne-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background: #eafbe6;
+  margin: 0;
+  padding: 0;
+  font-family: 'SUIT-Regular', 'Pretendard', 'Noto Sans';
+}
+
+.container {
+  width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* 검색바 */
+.search-bar {
+  position: relative;
+  width: 100%;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+}
+.search-bar input {
+  width: 928px;
+  padding: 18px 24px 18px 48px;
+  border-radius: 18px;
+  border: none;
+  font-size: 1.1rem;
+  color: #526d93;
+  background: #f8f8f8;
+  box-shadow: 0 4px 24px rgba(34,195,34,0.07);
+  outline: none;
+}
+input::placeholder {
+  color: #526d93;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  pointer-events: none; /* 클릭 막힘 방지 */
+}
+.search-icon img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* 메인 섹션 */
+.log-main-section {
+  display: flex;
+  gap: 32px;
+}
+
+/* 왼쪽 */
+.log-left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 340px;
+  min-width: 320px;
+}
+td {
+  width: 36px; /* 원하는 정사각형 크기 */
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.calendar-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+  padding: 28px 22px;
+}
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.calendar-year-month {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #24b32f;
+}
+.calendar-arrow1,
+.calendar-arrow2 {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #24b32f;
+  cursor: pointer;
+}
+.calendar-arrow1 img,
+.calendar-arrow2 img {
+  display: block;
+}
+.calendar-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 3px;
+  text-align: center;
+}
+.calendar-table td,
+.calendar-table th {
+  width: 36px;
+  height: 36px;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10px; /* 둥근 사각형 */
+  background: transparent;
+  transition: background 0.2s, color 0.2s, border-radius 0.2s;
+  color: #888;
+  font-weight: 500;
+  padding: 0.5px;
+}
+.calendar-table td.selected,
+.calendar-table td.active {
+  background: #009900;
+  color: #fff;
+  text-align: center;
+}
+.calendar-table td.inactive {
+  color: #bbb;
+  background: none;
+  cursor: default;
+  text-align: center;
+}
+
+/* 식물 상태 */
+.plant-status-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plant-status-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+}
+.plant-status-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.log-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.log-entry {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34,195,34,0.10);
+  margin-bottom: 12px;
+  padding: 18px 28px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.log-entry:hover {
+  box-shadow: 0 8px 32px rgba(34,195,34,0.14);
+}
+
+.log-entry-row {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.log-entry-detail-row {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.log-entry-left {
+  width: 60px; /* 기준 수직선 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.log-entry-date {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #24b32f;
+  width: 70px;
+}
+
+
+.log-entry-time {
+  width: 50px;
+  font-size: 0.98rem;
+  color: #888;
+  white-space: nowrap;
+  min-width: 45px;
+  margin-left: 12px;
+}
+
+.log-entry-title-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.log-entry-title-row {
+  display: flex;
+  align-items: center;
+  /* gap: 8px; */
+  width: 100%;
+  min-height: 24px;
+}
+
+.log-entry-dot {
+  width: 7px;
+  height: 7px;
+  background: #24b32f;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.log-entry-title {
+  font-size: 1.07rem;
+  font-weight: 500;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  margin-left: 8px;;
+}
+
+.log-entry-arrow {
+  font-size: 1.6rem;
+  color: #888;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.log-entry-arrow img {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.log-entry.open .log-entry-arrow img {
+  transform: rotate(180deg);
+}
+
+.log-entry-content {
+  width: 100%;
+  font-size: 0.99rem;
+  color: #6b7a7a;
+  line-height: 1.4;
+  display: none;
+}
+
+.log-entry.open .log-entry-content {
+  display: block;
+}
+
+.log-entry-detail-right {
+  flex: 1;
+}
+
+.log-entry-detail-content {
+  font-size: 0.95rem;
+  color: #6b7a7a;
+  line-height: 1.5;
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+/* @media (max-width: 1100px) {
+  .container {
+    width: 98vw;
+    min-width: 320px;
+  }
+  .log-main-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .log-left, .log-right {
+    width: 100%;
+    min-width: 0;
+  }
+  .calendar-table td.selected,
+  .calendar-table td.active {
+    width: 36px;
+    height: 36px;
+    min-width: 24px;
+    min-height: 24px;
+    font-size: 0.9rem;
+    border-radius: 7px;
+    text-align: center;
+  }
+  .calendar-table td,
+  .calendar-table th {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    line-height: 24px;
+    font-size: 0.9rem;
+    border-radius: 7px;
+    padding: 0;
+  }
+} */
