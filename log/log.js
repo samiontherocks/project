@@ -102,7 +102,7 @@ function renderCalendar(year = currentYear, month = currentMonth) {
 
 // ========== JSON 기반 일기 로딩 및 렌더링 ==========
 async function loadUserDiaries(nickname) {
-  const response = await fetch('../public/users.json');
+  const response = await fetch('/public/users.json');
   const users = await response.json();
   const user = users.find(u => u.nickname === nickname);
   return user ? user.diaries : {};
@@ -142,7 +142,7 @@ function renderLogListByDiaries(diaryData, filterRecent7 = true) {
               <span class="log-entry-dot"></span>
               <span class="log-entry-title">${first.title}</span>
               <span class="log-entry-arrow">
-                <img src="../img/my-dropdown-icon.png" alt="드롭다운 아이콘" style="width:20px; height:20px;">
+                <img src="/img/my-dropdown-icon.png" alt="드롭다운 아이콘" style="width:20px; height:20px;">
               </span>
             </div>
             <div class="log-entry-content">

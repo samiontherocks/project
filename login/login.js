@@ -23,7 +23,7 @@ SignForm.addEventListener('submit', function(event) {
   const email = emailInput.value.trim();
   const password = passwordInput.value.trim();
 
-  fetch('../public/users.json')
+  fetch('/public/users.json')
     .then(response => {
       if (!response.ok) {
         throw new Error('사용자 데이터를 불러올 수 없습니다.');
@@ -43,7 +43,7 @@ SignForm.addEventListener('submit', function(event) {
         localStorage.setItem('nickname', userFound.nickname);  
 
         alert('로그인에 성공했습니다!');
-        window.location.href = '../home/home.html';
+        window.location.href = '/home/home.html';
       } else {
         errorMessage.textContent = '아이디 또는 비밀번호가 올바르지 않습니다.';
         errorMessage.classList.add('visible');

@@ -37,6 +37,6 @@ function setProfileLink() {
   const profileLink = document.querySelector('.profile-icon a');
 
   if (profileLink) {
-    profileLink.setAttribute('href', isLogin ? '../user/user.html' : '../login/login.html');
+    profileLink.setAttribute('href', isLogin ? '/user/user.html' : '/login/login.html');
   }
 }

@@ -33,7 +33,7 @@ SignForm.addEventListener('submit', function(event) {
     alert("비밀번호가 맞지 않습니다.")
   else {
     alert('회원가입에 성공했습니다!');
-    window.location.href = '../login/login.html';
+    window.location.href = '/login/login.html';
   }
 
 });

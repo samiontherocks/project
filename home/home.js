@@ -70,7 +70,7 @@ function renderTimelineFromData(timelineData) {
   document.getElementById('timeline-date').innerHTML = `
     <span class="timeline-year">${timelineData.year}</span>
     <span class="timeline-day">${timelineData.day}</span>
-    <img src="../img/icon-add.png" alt="수정" class="timeline-edit-icon" />
+    <img src="/img/icon-add.png" alt="수정" class="timeline-edit-icon" />
   `;
   document.getElementById('timeline-list').innerHTML = timelineData.records.map(rec => `
     <li>
@@ -96,7 +96,7 @@ function renderMission() {
 function loadTimelineFromJson() {
   console.log("✅ loadTimelineFromJson() 호출됨");
 
-  fetch('../public/users.json')
+  fetch('/public/users.json')
     .then(response => {
       if (!response.ok) throw new Error("서버 응답 실패: " + response.status);
       return response.json();

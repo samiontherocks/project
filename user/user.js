@@ -32,15 +32,15 @@ const contentTemplates = {
     <p style="color: #15254d"; class="withdraw-question">정말 탈퇴하시겠어요?</p>
     <div class="withdraw-notices">
       <div class="notice">
-        <img src="../img/notice.png" alt="알림">
+        <img src="/img/notice.png" alt="알림">
         <span style="color: #5E6D93";>이전 기록을 볼 수 없습니다.</span>
       </div>
       <div class="notice">
-        <img src="../img/notice.png" alt="알림">
+        <img src="/img/notice.png" alt="알림">
         <span style="color: #5E6D93">이용 내역이 모두 삭제됩니다.</span>
       </div>
       <div class="notice">
-        <img src="../img/notice.png" alt="알림">
+        <img src="/img/notice.png" alt="알림">
         <span style="color: #5E6D93">30일 이내 재가입이 불가합니다.</span>
       </div>
     </div>
@@ -59,11 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const loginEmail = localStorage.getItem('email');
 
   if (!loginEmail) {
-    window.location.href = '../login/login.html';
+    window.location.href = '/login/login.html';
     return;
   }
 
-  fetch('../public/users.json')
+  fetch('/public/users.json')
     .then(res => {
       if (!res.ok) throw new Error('사용자 정보를 불러올 수 없습니다.');
       return res.json();
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!currentUser) {
         alert('해당 사용자 정보를 찾을 수 없습니다.');
         localStorage.removeItem('email');
-        window.location.href = '../login/login.html';
+        window.location.href = '/login/login.html';
         return;
       }
 
@@ -166,7 +166,7 @@ document.addEventListener('click', function (e) {
   if (action === 'logout' || action === 'delete') {
     localStorage.setItem('isLogin', 'false');
     localStorage.removeItem('email');
-    window.location.href = '../index/index.html';
+    window.location.href = '/index/index.html';
   }
 });
 
