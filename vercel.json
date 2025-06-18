@@ -1,10 +1,13 @@
 {
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
     {
-      "src": "/(.*\\.html|.*\\.css|.*\\.js|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.svg|.*\\.gif|.*\\.webp)",
+      "src": "/(.*\\.(?:html|css|js|png|jpg|jpeg|svg|gif|webp))",
       "dest": "/$1"
     },
     {
