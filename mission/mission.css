@@ -61,38 +61,21 @@ body {
 }
 .mission-box {
   width: 630px;
-  /* height: auto; */
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(34,195,34,0.10);
   padding: 32px 28px;
   box-sizing: border-box;
   overflow-y: auto;
-  /*box-shadow: 0 4px 24px rgba(34,195,34,0.10);
-  padding: 32px 28px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;*/
 }
 .mission-completed-box {
   width: 340px;
-  /* height: 370px; */
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(34,195,34,0.10);
   padding: 32px 28px;
   box-sizing: border-box;
   overflow-y: auto;
-  /*box-shadow: 0 4px 24px rgba(34,195,34,0.10);
-  padding: 32px 28px;
-  width: 340px;
-  height: 370px;
-  min-width: 340px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;*/
 }
 .mission-title {
   font-size: 1.15rem;
@@ -124,7 +107,7 @@ body {
   margin: 10px;
 }
 .mission-list {
-  width: auto; /* 필요시 조정 */
+  width: auto;
   margin-left: 30px;
 }
 #weekly-mission-list {
@@ -133,7 +116,6 @@ body {
 }
 .mission-list li {
   display: flex;
-  /* align-items: center; */
   gap: 10px;
   font-size: 1.02rem;
   color: #444;

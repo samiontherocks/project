@@ -100,7 +100,7 @@ function renderCalendar(year = currentYear, month = currentMonth) {
   }
 }
 
-// ========== JSON 기반 일기 로딩 및 렌더링 ==========
+// JSON 기반 일기 로딩 및 렌더링
 async function loadUserDiaries(nickname) {
   const response = await fetch('/public/users.json');
   const users = await response.json();

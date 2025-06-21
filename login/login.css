@@ -112,15 +112,13 @@ form {
   background: #009900;
 }
 .login-btn.enabled {
-  background: #009900; /* 활성(초록) */
+  background: #009900;
   cursor: pointer;
 }
 .error {
   color: red;
   font-size: 0.9rem;
   text-align: center;
-  /* height: 1rem; */
-  /* margin-bottom: 4px;; */
   display: none;
 }
 .error.visible {

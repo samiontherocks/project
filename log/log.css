@@ -61,7 +61,7 @@ input::placeholder {
   height: 20px;
   display: flex;
   align-items: center;
-  pointer-events: none; /* 클릭 막힘 방지 */
+  pointer-events: none;
 }
 .search-icon img {
   width: 20px;
@@ -84,7 +84,7 @@ input::placeholder {
   min-width: 320px;
 }
 td {
-  width: 36px; /* 원하는 정사각형 크기 */
+  width: 36px;
   height: 36px;
   text-align: center;
   vertical-align: middle;
@@ -133,7 +133,7 @@ td {
   box-sizing: border-box;
   text-align: center;
   vertical-align: middle;
-  border-radius: 10px; /* 둥근 사각형 */
+  border-radius: 10px;
   background: transparent;
   transition: background 0.2s, color 0.2s, border-radius 0.2s;
   color: #888;
@@ -213,7 +213,7 @@ td {
 }
 
 .log-entry-left {
-  width: 60px; /* 기준 수직선 */
+  width: 60px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

@@ -20,7 +20,6 @@ body {
 }
 .user-container {
   width: 1000px;
-  /* margin: 48px; */
   display: flex;
   gap: 30px;
 }
@@ -46,7 +45,6 @@ body {
   height: 68px;
   border-radius: 20%;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  /* object-fit: cover; */
   margin-bottom: 0;
   background: #fff;
 }
@@ -147,7 +145,6 @@ body {
   color: #222;
   outline: none;
   box-shadow: 0 4px 48px rgba(0,0,0,0.01);
-  /* box-sizing: border-box; */
 }
 .user-input:focus {
   background: #fff !important;
@@ -181,11 +178,11 @@ body {
   background: #24b32f;
 }
 .sidebar-menu-icon svg {
-  color: #5E6D93; /* 비활성 기본색 */
+  color: #5E6D93;
   transition: color 0.2s;
 }
 .sidebar-menu-item.active .sidebar-menu-icon svg {
-  color: #009900; /* 활성(선택) 시 초록색 */
+  color: #009900;
 }
 #nickname.user-input,
 #email.user-input,
@@ -199,7 +196,7 @@ body {
 .withdraw-notices {
   display: flex;
   flex-direction: column;
-  gap: 10px;             /* 각 notice 간 간격 */
+  gap: 10px;
   margin-top: 15px;
   margin-bottom: 30px;
 }
@@ -209,7 +206,7 @@ body {
   align-items: center;
 }
 .notice img {
-  width: 16px;           /* 아이콘 크기 조정 */
+  width: 16px;
   height: 16px;
 }
 .user-input.withdraw-reason {

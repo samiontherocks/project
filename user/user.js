@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return res.json();
     })
     .then(users => {
-      localStorage.setItem('users', JSON.stringify(users)); // ✅ 로컬에 저장
+      localStorage.setItem('users', JSON.stringify(users));
 
       const currentUser = users.find(user => user.email === loginEmail);
       if (!currentUser) {
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // ✅ 프로필 정보 렌더링
+      // 프로필 정보 렌더링
       renderProfileContent();
     })
     .catch(error => {

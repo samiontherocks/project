@@ -24,11 +24,6 @@ nicknameInput.addEventListener('input', checkInputs);
 SignForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  // const email = emailInput.value.trim();
-  // const password = passwordInput.value.trim();
-  // const passwordConfirmInput = passwordConfirmInput.value.trim();
-  // const nicknameInput = nicknameInput.value.trim();
-
   if (passwordInput.value.trim() !== passwordConfirmInput.value.trim())
     alert("비밀번호가 맞지 않습니다.")
   else {

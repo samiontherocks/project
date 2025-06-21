@@ -125,7 +125,7 @@ function loadTimelineFromJson() {
     });
 }
 
-// ✅ 모달 생성 (타이틀 + 폼 스크롤 + 버튼 고정 구조)
+// 모달 생성
 const timelineModalHTML = `
   <div id="timeline-modal" class="modal-overlay" style="display:none;">
     <div class="modal-content-with-footer">
@@ -144,7 +144,7 @@ const timelineModalHTML = `
 `;
 document.body.insertAdjacentHTML('beforeend', timelineModalHTML);
 
-// 🔹 모달 열기
+// 모달 열기
 document.addEventListener('click', function (e) {
   if (e.target.classList.contains('timeline-edit-icon')) {
     const modal = document.getElementById('timeline-modal');
@@ -175,7 +175,7 @@ document.addEventListener('click', function (e) {
   }
 });
 
-// 🔹 제출 시 모달 닫기
+// 제출 시 모달 닫기
 document.addEventListener('submit', function (e) {
   if (e.target.id === 'timeline-edit-form') {
     e.preventDefault();
