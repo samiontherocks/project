@@ -399,6 +399,7 @@ body {
   background: transparent;
   padding: 0;
   color: #222;
+  font-family: 'SUIT-Regular';
 }
 
 .entry-fields textarea {
@@ -409,6 +410,7 @@ body {
   background: transparent;
   border: none;
   resize: none;
+  font-family: 'SUIT-Regular';
 }
 
 .entry-fields input:focus,
@@ -433,10 +435,6 @@ body {
   align-items: center;
   margin-bottom: 28px;
 }
-/* .modal1,
-.modal2 {
-  flex-direction: column;
-} */
 .modal-time.user-input,
 .modal-title.user-input,
 .modal-desc.user-input {
@@ -467,7 +465,6 @@ body {
   position: relative;
 }
 .user-edit-btn {
-  
   width: 100%;
   padding: 14px 0;
   border: none;
